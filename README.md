@@ -2,7 +2,7 @@
 
 
 
-Input field: in which the user can specify how many seconds to count up to / down from. (count target)
+Input field: the user can specify how many seconds to count up to / down from. (count target)
 
 UP COUNTER :  counting up from 0 to countTarget
 
