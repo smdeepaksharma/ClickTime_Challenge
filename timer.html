@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Timer</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="timer.js"></script>
+		<link rel="stylesheet" href="timer.css">
+	</head>
+	<body onload="hider();">
+		<div class="container-fluid">
+		<br>
+		<br>
+			<div class="wrapper">
+				<div class="modal-header">
+					<h1>Perfect Timing</h1>
+				</div>
+				<div class="popmodal">
+					<div class="popmodal-content">
+						<img src="images/timeup.png" width="300px" height="300px" style="border-radius:50%"/>
+					</div>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+					   <div class="col-sm-4">
+							<h2 align="center">CLOCK INPUT</h2>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Enter Count Target?<div id="error" style="color:red;"></div>
+										</th>
+									</tr>
+									<tr>
+										<th><input type="text" id="val" onkeyup="inputReader();"></th>
+									</tr>
+									<tr>
+										<th><h5>Note : Value of count target is in seconds</h5>
+										<h5>Up Counter : Counts from 0 to count target</h5>
+										<h5>Down Counter : Counts down from countTarget to 0.</h5>
+										
+										
+										</th>
+									</tr>
+								</thead>
+							</table>
+					   </div>
+						<div class="col-sm-4">
+							<h2 align="center">UP COUNTER</h2>
+							<table class="table">
+								<thead>
+								  <tr>
+									<th>Days</th>
+									<th>Hours</th>
+									<th>Minutes</th>
+									<th>Seconds</th>
+								  </tr>
+								</thead>
+								<tbody >
+									<td><div id="days_up">0</div></td>
+									<td><div id="hours_up">0</div></td>
+									<td><div id="minutes_up">0</div></td>
+									<td><div id="seconds_up">0</div></td>
+								</tbody>
+							</table>
+							<div class="buttons">
+								<input type="button" class="btn btn-primary" id="upButton" disabled="true" value="Start" onclick="upcounter(this.value);"/>
+								<input type="button" value="Reset" onClick="resetup();" />
+							</div>
+						</div> 
+						<div class="col-sm-4">
+							<h2 align="center">DOWN COUNTER</h2>
+							<table class="table">
+								<thead>
+								<tr>
+									<th>Days</th>
+									<th>Hours</th>
+									<th>Minutes</th>
+									<th>Seconds</th>
+								</tr>
+								</thead>
+								<tbody>
+									<td><div id="d">0</div></td>
+									<td><div id="h">0</div></td>
+									<td><div id="m">0</div></td>
+									<td><div id="s">0</div></td>
+								</tbody>	
+							</table>
+							<input type="button" value="Start" disabled="true" id="theButton" onclick="start(this.value);" class="btn btn-primary"/>
+							<input type="button" value="Reset" onClick="resetIt();" class="btn btn-primary"/>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				<span>By : Deepak Sharma S M  | 
+				<a href="https://www.linkedin.com/in/deepak-sharma-8994ab109" target="_blank">
+				<img src="images/linkedin.png"/></a>
+				</span>
+				
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

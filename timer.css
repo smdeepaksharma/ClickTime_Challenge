@@ -1,0 +1,79 @@
+.popmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.popmodal-content {
+    background-color: #fefefe;
+	color: red;
+	text-align : center;
+    margin: auto;
+   
+    border: 1px solid #888;
+	border-radius : 50%;
+    width: 300px;
+	height: 300px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  th{
+  text-align : center;
+  font-family : inherit;
+  font-size : 20px;
+  background-color : #c7c9d0;
+  }
+  td {
+	height: 150px;
+  text-align : center;
+  font-family : digital-clock-font;
+  font-size : 75px;  
+  background-color : rgba(124, 132, 183, 0.36);;
+	  
+  }
+@font-face{
+ font-family:'digital-clock-font';
+ src: url('digitalfont/digital_mono.ttf');
+}
+
+.buttons
+{
+	height : 150px;
+}
+
+
+input[type=button] {
+    width: 100px;
+	height : 100px;
+    background-color: white;
+	box-shadow: 0 0 2px 2px #c0c0c1;
+    color: black;
+	margin-left : 70px;
+	font-size : 20px;
+	display : inline-block;
+	border-radius : 50%;
+	border : 1px solid black;
+    
+}
