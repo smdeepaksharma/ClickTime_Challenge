@@ -1,6 +1,6 @@
-# ClickTime_Challenge
+# Dual Timer
 
-
+A Javascript based clock timer. 
 
 Input field: the user can specify how many seconds to count up to / down from. (count target)
 
